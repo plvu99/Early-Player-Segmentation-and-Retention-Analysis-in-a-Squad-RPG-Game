@@ -4,7 +4,7 @@
 
 This project analyzes **early player behavior (Day 0–Day 1)** in a Squad RPG mobile game to identify patterns that drive player retention and early monetization.
 
-Using behavioral data from gameplay activity, **clustering techniques** were applied to segment players into meaningful groups based on engagement, spending behavior, and gameplay preferences. The goal is to help game developers better understand early player behavior and design targeted retention strategies.
+Using behavioral data from gameplay activity, **segmentation and clustering techniques** were applied to segment players into meaningful groups based on engagement, spending behavior, and gameplay preferences. The goal is to help game developers better understand early player behavior and design targeted retention strategies.
 
 The analysis is based on a real mobile game dataset provided for academic research. 
 
