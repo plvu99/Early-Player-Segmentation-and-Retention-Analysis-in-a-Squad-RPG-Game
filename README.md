@@ -4,13 +4,13 @@
 
 This project analyzes **early player behavior (Day 0–Day 1)** in a Squad RPG mobile game to identify patterns that drive player retention and early monetization.
 
-Using behavioral data from gameplay activity, **segmentation and clustering techniques** were applied to segment players into meaningful groups based on engagement, spending behavior, and gameplay preferences. The goal is to help game developers better understand early player behavior and design targeted retention strategies.
+Using behavioral gameplay data, **segmentation and clustering techniques** were applied to group players based on engagement, spending behavior, and gameplay preferences. The goal is to help game developers better understand early player behavior and design targeted retention strategies.
 
 The analysis is based on a real mobile game dataset provided for academic research. 
 
 ## Business Problem
 
-Player retention is one of the most critical metrics in mobile games. Many players churn within the first few days after installation.
+Player retention is one of the most critical metrics in mobile games, as many players churn within the first few days after installation.
 
 Understanding early behavioral signals can help game teams:
 - Identify players likely to become long-term users
@@ -26,7 +26,7 @@ The dataset contains early gameplay behavior from players of a Squad RPG mobile 
 - Gameplay sessions
 - Playtime
 - Spending behavior
-- Gameplay modes activity (Campaign Missions, PvP Matches, Side Missions) 
+- Activity across gameplay modes (Campaign Missions, PvP Matches, Side Missions)
 - Player session duration
 
 In Squad RPG games, players build teams of characters and complete missions across different gameplay modes to progress and earn rewards.
@@ -38,9 +38,9 @@ The analysis followed these steps:
 ### 1. Feature Engineering
 
 Key behavioral features were derived from gameplay data, including:
-- Total sessions played on D0-D1
-- Total playtime on D0-D1
-- Total spend on D0-D1
+- Total sessions played on Day 0–Day 1
+- Total playtime on Day 0–Day 1
+- Total spend on Day 0–Day 1
 - Campaign Missions won/lost/retreat
 - PvP Matches won/lost/retreat
 - Side Missions won/lost/retreat
@@ -49,43 +49,66 @@ These features capture how actively players engage with different gameplay modes
 
 ### 2. Player Segmentation
 
-A segmentation analysis for for early spenders (players who have spent on D0 or D1 or both days) and D1 retained players by computing total missions under each game mode, total engagement on D0/D1, session length or playtime quality on D0/D1, then computing mean behavior for each segment.
+A segmentation analysis was conducted to compare early spenders (players who spent on Day 0 or Day 1) and Day-1 retained players.
 
-A clustering analysis with two clustering algorithms were applied: K-Means Clustering and DBSCAN
+Segments were defined by evaluating:
+- Total engagement across gameplay modes
+- Total missions played
+- Session length and playtime quality on Day 0–Day 1
 
-The models grouped players based on similarities in early gameplay behavior and engagement patterns.
+Mean behavioral patterns were then computed for each segment.
 
-Performance comparison was used to determine the more meaningful segmentation structure.
+### 3. Clustering Analysis
+
+Two clustering algorithms were applied:
+- K-Means
+- DBSCAN
+
+Players were grouped based on similarities in early gameplay engagement patterns.
+
+Performance comparison between the two algorithms was conducted to determine the most meaningful clustering structure.
 
 ## Key Insights
 
 ### Segmentation Analysis 
 
-The segmentation analysis revealed 4 distinct player types:
-1. Early churners (Non-spender, Not Retained)
-2. Engaged free players (Non-spender, D1 Retained)
-3. Early spenders (Early Spender, Not Retained)
-4. High-value retained players (Early Spender, D1 Retained)
+The segmentation analysis revealed four distinct player types:
+1. Early churners _(Non-spender, Not retained)_
+2. Engaged free players _(Non-spender, D1 retained)_
+3. Early spenders _(Spender, Not retained)_
+4. High-value retained players _(Spender, D1 retained)_
 
 Key findings:
-- D1 retained players played 2–5 times more Day-0 content than churners. This confirms that early gameplay depth is a major driver of short-term retention.
-- Early spenders are extremely small (<0.3%) but 84% (102 players) retained. They exhibit the highest Day-0 and Day-1 activity. This segment is critical for long-term revenue.
-- The largest segment is early churners (75%), who barely engage and have very low mission completion. This suggests onboarding friction or insufficient “first session excitement.”
-- Returning non-spenders form a healthy engaged segment with strong Day-0 and Day-1 activity. This group represents high future monetization potential.
-- D1 session length differentiates low-value vs. high-value retained players. Non-spender retained ~21 minutes per session, while spender retained ~33 minutes per session. Longer sessions signal deeper goal-oriented behavior.
+- D1 retained players played 2–5× more Day-0 content than churners, confirming that early gameplay depth strongly predicts short-term retention.
+- Early spenders are extremely rare (<0.3%) but highly retained (84%). These players exhibit the highest Day-0 and Day-1 activity and represent critical long-term revenue potential.
+- Early churners make up the largest segment (75%). Their minimal engagement suggests onboarding friction or insufficient early-game motivation.
+- Returning non-spenders form a healthy engaged segment with strong early gameplay activity, indicating high potential for future monetization.
+- Session length strongly differentiates player value.
+  - Non-spender retained players: ~21 minutes/session
+  - Spender retained players: ~33 minutes/session
 
 ### Clustering Analysis
-When comparing K-Means and DBSCAN on the D0 and D1 behavioral data, the two algorithms produced very different outcomes due to the heavily skewed nature of player activity that also included lots of outliers. K-Means performed poorly for this dataset, grouing 86% of players into one dominant cluster and creating a tiny cluster of 9 players driven entirely by outliers, which indicates that its assumption of spherical, evenly sized clusters does not fit real game behavior. This resulted in clusters that were imbalanced, difficult to interpret, and not actionable for segmentation.
 
-In contrast, DBSCAN performed significantly better by adapting to the natural density structure of the data. It identified a meaningful set of clusters: casual players, light-moderate players, mid-core players. It also correctly isolated over 4,800 high-engagement outliers, including potential whales, as noise instead of forcing them into artificial centroids. DBSCAN also revealed several small but meaningful microsegments that K-Means could not detect. Because DBSCAN handles skew, non-linear cluster shapes, and extreme outliers while producing more interpretable and behaviorally distinct groups, it provides a significantly more accurate and useful clustering solution than K-Means in this scenario.
+When comparing K-Means and DBSCAN, the algorithms produced different outcomes due to the heavily skewed distribution of player activity and presence of extreme outliers.
+
+K-Means performed poorly, grouping 86% of players into a single dominant cluster while creating a tiny cluster of only nine players driven entirely by outliers. This occurs because K-Means assumes spherical and evenly sized clusters, which does not reflect real player behavior patterns.
+
+DBSCAN performed significantly better, as it adapts to the natural density structure of the data. It identified several meaningful behavioral groups:
+- Casual players
+- Light–moderate players
+- Mid-core players
+
+Additionally, DBSCAN correctly isolated over 4,800 high-engagement outliers (including potential whales) as noise instead of forcing them into artificial clusters.
+
+Because DBSCAN handles skewed distributions, irregular cluster shapes, and extreme outliers, it produced more interpretable and actionable player segments compared to K-Means.
 
 ## Business Recommendations
 
 Based on the segmentation results:
-- Target high-engagement players by providing rewards and progression incentives to maintain engagement
-- Improve onboarding for low-engagement players by simplifying early missions and tutorials
-- Design targeted monetization offers by focusing on high-engagement segments likely to convert
-- Encourage exploration across game modes by introducing early incentives to try PvP and side missions
+- Target high-engagement players with rewards and progression incentives to sustain engagement.
+- Improve onboarding for low-engagement players by simplifying early missions and tutorials.
+- Design targeted monetization offers for highly engaged segments likely to convert.
+- Encourage exploration across gameplay modes by introducing early incentives to try PvP and side missions.
 
 ## Tools & Technologies
 - Python (Pandas, NumPy, Scikit-learn)
