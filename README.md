@@ -1,12 +1,12 @@
-# Early Player Segmentation and Retention Analysis (Squad RPG Game)
+# 🎮 Early Player Segmentation and Retention Analysis (Squad RPG Game)
 
-## Overview
+## 🔎 Overview
 
 This project analyzes **early player behavior (Day 0–Day 1)** in a Squad RPG mobile game to identify patterns that drive player retention and early monetization.
 
 Using behavioral gameplay data, **segmentation and clustering techniques** were applied to group players based on engagement, spending behavior, and gameplay preferences. The goal is to help game developers better understand early player behavior and design targeted retention strategies.
 
-## Business Problem
+## 🔐 Business Problem
 
 Player retention is one of the most critical metrics in mobile games, as many players churn within the first few days after installation.
 
@@ -18,7 +18,7 @@ Understanding early behavioral signals can help game teams:
 
 This project focuses on Day 0–Day 1 activity, when early engagement patterns are formed.
 
-## Dataset
+## 📊 Dataset
 
 The dataset contains 42K+ records of gameplay behavior from players of a Squad RPG mobile game, including:
 - Player and acquisition details 
@@ -29,7 +29,7 @@ The dataset contains 42K+ records of gameplay behavior from players of a Squad R
 
 In Squad RPG games, players build teams of characters and complete missions across different gameplay modes to progress and earn rewards.
 
-## Methodology
+## 📍 Methodology
 
 This project combines segmentation and clustering analysis.
 
@@ -57,7 +57,7 @@ Players were grouped based on similarities in early gameplay engagement patterns
 
 Performance comparison between the two algorithms was conducted to determine the most meaningful clustering structure.
 
-## Key Insights
+## 🔑 Key Insights
 
 ### Segmentation Analysis 
 
@@ -109,7 +109,7 @@ Additionally, DBSCAN correctly isolated over 4,800 high-engagement outliers (inc
 
 Because DBSCAN handles skewed distributions, irregular cluster shapes, and extreme outliers, it produced more interpretable and actionable player segments compared to K-Means.
 
-## Business Recommendations
+## ✍️ Business Recommendations
 
 Based on the segmentation results:
 - Target high-engagement players with rewards and progression incentives to sustain engagement.
@@ -117,7 +117,7 @@ Based on the segmentation results:
 - Design targeted monetization offers for highly engaged segments likely to convert.
 - Encourage exploration across gameplay modes by introducing early incentives to try PvP and side missions.
 
-## Tools & Technologies
+## ⚙ Tools & Technologies
 
 - Python (Pandas, NumPy, Scikit-learn)
 - Clustering methods (K-Means, DBSCAN)
