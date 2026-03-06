@@ -97,6 +97,8 @@ DBSCAN performed significantly better, as it adapts to the natural density struc
 
 <img width="714" height="547" alt="image" src="https://github.com/user-attachments/assets/d6ab6af7-5afc-4a6c-97ae-4a931a7f0b48" />
 
+<img width="561" height="427" alt="image" src="https://github.com/user-attachments/assets/ce277672-318d-4e79-b8f4-b653b599875a" />
+
 Additionally, DBSCAN correctly isolated over 4,800 high-engagement outliers (including potential whales) as noise instead of forcing them into artificial clusters.
 
 Because DBSCAN handles skewed distributions, irregular cluster shapes, and extreme outliers, it produced more interpretable and actionable player segments compared to K-Means.
