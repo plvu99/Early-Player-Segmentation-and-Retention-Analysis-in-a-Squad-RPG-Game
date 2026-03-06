@@ -90,10 +90,7 @@ K-Means performed poorly, grouping 86% of players into a single dominant cluster
 
 <img width="1489" height="1475" alt="image" src="https://github.com/user-attachments/assets/2b4f54df-9fc2-4265-b6a4-5bef60a773e1" />
 
-DBSCAN performed significantly better, as it adapts to the natural density structure of the data. It identified several meaningful behavioral groups:
-1. Casual players
-2. Light–moderate players
-3. Mid-core players
+DBSCAN performed significantly better, as it adapts to the natural density structure of the data. It identified several meaningful behavioral groups, including casual players, light–moderate players, and mid-core players.
 
 <img width="714" height="547" alt="image" src="https://github.com/user-attachments/assets/d6ab6af7-5afc-4a6c-97ae-4a931a7f0b48" />
 
