@@ -1,4 +1,4 @@
-# 🎮 Early Player Segmentation and Retention Analysis (Squad RPG Game)
+# Early Player Segmentation and Retention Analysis (Squad RPG Game)
 
 ## 🔎 Overview
 
