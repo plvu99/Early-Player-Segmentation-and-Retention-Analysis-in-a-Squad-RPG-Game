@@ -97,13 +97,13 @@ DBSCAN performed significantly better, as it adapts to the natural density struc
 
 <img width="714" height="547" alt="image" src="https://github.com/user-attachments/assets/d6ab6af7-5afc-4a6c-97ae-4a931a7f0b48" />
 
-<img width="418" height="129" alt="Screenshot 2026-03-05 at 9 24 00 PM" src="https://github.com/user-attachments/assets/d901d97f-946e-4242-b047-14ce64a750b8" />
+<img width="1648" height="494" alt="Screenshot 2026-03-05 at 9 27 09 PM" src="https://github.com/user-attachments/assets/9a0ba00e-d660-4f39-9526-9c6262863fc9" />
 
-<img width="283" height="126" alt="Screenshot 2026-03-05 at 9 24 08 PM" src="https://github.com/user-attachments/assets/8e7f94c5-9ecf-468d-ac50-7097eb38c9a9" />
+<img width="1102" height="478" alt="Screenshot 2026-03-05 at 9 27 19 PM" src="https://github.com/user-attachments/assets/66e3a182-5229-485f-9335-bfba33debf44" />
 
-<img width="423" height="96" alt="Screenshot 2026-03-05 at 9 24 19 PM" src="https://github.com/user-attachments/assets/b9a3fb2c-155d-4c81-9e5f-e07a472c7480" />
+<img width="1655" height="357" alt="Screenshot 2026-03-05 at 9 27 34 PM" src="https://github.com/user-attachments/assets/006c18cc-1fbd-4e95-a123-ab5f0324d506" />
 
-<img width="419" height="98" alt="Screenshot 2026-03-05 at 9 24 28 PM" src="https://github.com/user-attachments/assets/231546e5-9960-4844-b349-2f38d17dae35" />
+<img width="1653" height="369" alt="Screenshot 2026-03-05 at 9 27 43 PM" src="https://github.com/user-attachments/assets/d2926a7c-c342-42cb-8005-8967ac23c18b" />
 
 Additionally, DBSCAN correctly isolated over 4,800 high-engagement outliers (including potential whales) as noise instead of forcing them into artificial clusters.
 
