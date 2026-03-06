@@ -39,7 +39,7 @@ Segmentation evaluates player behavior across predefined business groups (spendi
 
 A segmentation analysis was conducted to compare early spenders (players who spent on Day 0 or Day 1) and Day-1 retained players.
 
-Key behavioral features were derived from gameplay data, including:
+Key behavioral features were engineered from gameplay data, including:
 - Total sessions played on Day 1
 - Total playtime on Day 1
 - Total spend on Day 0–Day 1
