@@ -61,7 +61,7 @@ Performance comparison between the two algorithms was conducted to determine the
 
 ### Segmentation Analysis 
 
-The segmentation analysis revealed four distinct player types:
+Four distinct player types were revealed:
 1. Early churners _(Non-spender, Not retained)_
 2. Engaged free players _(Non-spender, D1 retained)_
 3. Early spenders _(Spender, Not retained)_
