@@ -108,7 +108,7 @@ Because DBSCAN handles skewed distributions, irregular cluster shapes, and extre
 
 ## ✍️ Business Recommendations
 
-Based on the segmentation results:
+Based on the segmentation and clustering results:
 - Target high-engagement players with rewards and progression incentives to sustain engagement.
 - Improve onboarding for low-engagement players by simplifying early missions and tutorials.
 - Design targeted monetization offers for highly engaged segments likely to convert.
