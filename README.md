@@ -108,11 +108,51 @@ Because DBSCAN handles skewed distributions, irregular cluster shapes, and extre
 
 ## ✍️ Business Recommendations
 
-Based on the segmentation and clustering results:
-- Target high-engagement players with rewards and progression incentives to sustain engagement.
-- Improve onboarding for low-engagement players by simplifying early missions and tutorials.
-- Design targeted monetization offers for highly engaged segments likely to convert.
-- Encourage exploration across gameplay modes by introducing early incentives to try PvP and side missions.
+Based on the segmentation and clustering results, several actionable strategies can improve player retention and monetization.
+
+### 1. Strengthen Early Engagement for New Players
+
+Players who churn early typically complete very few missions and spend little time in the game.
+
+Possible improvements:
+- Simplify the first 3–5 campaign missions to ensure quick early wins.
+- Introduce guided objectives or tutorial prompts to help players understand core mechanics.
+- Provide early rewards (gear, characters, or in-game currency) for completing initial missions.
+
+Goal: Increase early gameplay depth, which strongly correlates with Day-1 retention.
+
+### 2. Convert Engaged Free Players into Future Spenders
+
+Engaged non-spenders represent a large segment with strong gameplay activity but no early purchases.
+
+Potential strategies:
+- Offer limited-time starter bundles after players complete several missions.
+- Introduce discounted beginner packs that accelerate squad progression.
+- Provide progression-based offers triggered by milestones (e.g., completing a campaign chapter).
+
+Goal: Encourage first purchases among players who already demonstrate strong engagement.
+
+### 3. Retain High-Value Players with Deeper Progression
+
+Early spenders and highly engaged players show the longest sessions and highest gameplay activity.
+
+To retain these players:
+- Unlock advanced PvP leagues or competitive events earlier.
+- Introduce daily challenges or leaderboards to maintain long-term engagement.
+- Provide exclusive rewards or cosmetic items tied to high-level gameplay achievements.
+
+Goal: Sustain engagement among the most valuable player segments.
+
+### 4. Encourage Exploration Across Gameplay Modes
+
+Many low-engagement players primarily interact with a single game mode.
+
+Potential solutions:
+- Provide cross-mode incentives (e.g., rewards for trying PvP after campaign missions).
+- Add daily quests requiring participation in different modes.
+- Introduce mode-specific bonuses that encourage experimentation.
+
+Goal: Increase gameplay variety, which often correlates with higher retention.
 
 ## ⚙ Tools & Technologies
 
