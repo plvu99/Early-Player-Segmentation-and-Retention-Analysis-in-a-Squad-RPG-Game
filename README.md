@@ -22,8 +22,8 @@ This project focuses on Day 0–Day 1 activity, when early engagement patterns a
 
 The dataset contains 42K+ records of gameplay behavior from players of a Squad RPG mobile game, including:
 - Player and acquisition details 
-- Gameplay sessions
-- Playtime
+- Total sessions played
+- Total playtime
 - Spending behavior
 - Activity across gameplay modes (Campaign Missions, PvP Matches, Side Missions)
 
