@@ -97,7 +97,7 @@ DBSCAN performed significantly better, as it adapts to the natural density struc
 
 <img width="714" height="547" alt="image" src="https://github.com/user-attachments/assets/d6ab6af7-5afc-4a6c-97ae-4a931a7f0b48" />
 
-<img width="561" height="427" alt="image" src="https://github.com/user-attachments/assets/ce277672-318d-4e79-b8f4-b653b599875a" />
+<img width="427" height="443" alt="Screenshot 2026-03-05 at 9 21 41 PM" src="https://github.com/user-attachments/assets/d670421a-5412-4df7-b1a1-3abd3b9f5e24" />
 
 Additionally, DBSCAN correctly isolated over 4,800 high-engagement outliers (including potential whales) as noise instead of forcing them into artificial clusters.
 
