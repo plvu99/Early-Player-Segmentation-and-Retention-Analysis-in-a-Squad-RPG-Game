@@ -110,7 +110,7 @@ Because DBSCAN handles skewed distributions, irregular cluster shapes, and extre
 
 Based on the segmentation and clustering results, several actionable strategies can improve player retention and monetization.
 
-### 1. Strengthen Early Engagement for New Players
+### 1. Strengthen early engagement for new players
 
 Players who churn early typically complete very few missions and spend little time in the game.
 
@@ -121,7 +121,7 @@ Possible improvements:
 
 Goal: Increase early gameplay depth, which strongly correlates with Day-1 retention.
 
-### 2. Convert Engaged Free Players into Future Spenders
+### 2. Convert engaged free players into future spenders
 
 Engaged non-spenders represent a large segment with strong gameplay activity but no early purchases.
 
@@ -132,7 +132,7 @@ Potential strategies:
 
 Goal: Encourage first purchases among players who already demonstrate strong engagement.
 
-### 3. Retain High-Value Players with Deeper Progression
+### 3. Retain high-value players with deeper progression
 
 Early spenders and highly engaged players show the longest sessions and highest gameplay activity.
 
@@ -143,7 +143,7 @@ To retain these players:
 
 Goal: Sustain engagement among the most valuable player segments.
 
-### 4. Encourage Exploration Across Gameplay Modes
+### 4. Encourage exploration across gameplay modes
 
 Many low-engagement players primarily interact with a single game mode.
 
