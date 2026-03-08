@@ -154,7 +154,7 @@ Potential solutions:
 
 Goal: Increase gameplay variety, which often correlates with higher retention.
 
-## ⚙ Tools & Technologies
+## ⚙ Tools & Techniques
 
 - Python (Pandas, NumPy, Scikit-learn)
 - Clustering methods (K-Means, DBSCAN)
