@@ -156,6 +156,6 @@ Goal: Increase gameplay variety, which often correlates with higher retention.
 
 ## ⚙ Tools & Techniques
 
-- Python (Pandas, NumPy, Scikit-learn)
+- Python
+- Data preprocessing (Pandas, NumPy)
 - Clustering methods (K-Means, DBSCAN)
-- Jupyter Notebook/Google Colab
